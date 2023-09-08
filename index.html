@@ -1,0 +1,1297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Match</title>
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="container" style="margin-top: 70px;">
+		<div class="row justify-content-center">
+			<div class="col-xl-3 col-lg-3">
+				<label>Sports Type</label>
+				<select name="sportsType" id="sportsType">
+					<option value="cricket">Cricket</option>
+					<option value="football">Football</option>
+					<option value="athletics">Athletics</option>
+					<option value="hockey">Hockey</option>
+				</select>
+			</div>
+
+			<div class="col-xl-3 col-lg-3">
+				<label>Gender</label>
+				<select name="gender" id="gender">
+					<option value="male">Male</option>
+					<option value="female">Female</option>
+				</select>
+			</div>
+
+			<div class="col-xl-3 col-lg-3">
+				<label>Sort By</label>
+				<select name="sortBy" id="sortBy">
+					<option value="healthScore">Health Score</option>
+					<option value="metabolicAge">Metabolic Age</option>
+				</select>
+			</div>
+
+			<div class="col-xl-3 col-lg-3" style="margin-top: 32px;">
+				<button class="btn btn-success" id="applyBtn">Apply</button>
+			</div>
+		</div>
+	</div>
+
+	<section class="main-content">
+		<div class="container">
+			<h1>Cricket Team</h1>
+			<br>
+			<br>
+			<table class="table">
+
+
+				<thead>
+					<tr>
+						<th>S.no</th>
+						<th>Player Name</th>
+						<th>Sports Name</th>
+						<th>Health Score</th>
+						<th>Gender</th>
+						<th>Age</th>
+						<th>Metabolic Age</th>
+						<th>BMI</th>
+						<th>Hydration</th>
+						<th>BoneMass</th>
+						<th>Visceral Fat</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="cricket" data-gender="male" data-health-score="90" data-metabolic-age="200">
+						<tr><td>1</td>
+						<td><div class="user-info">
+								<div class="user-info__img">
+									<img src="img/Rohit_sharam.jpg" alt="User Img">
+								</div>
+								<div class="user-info__basic">
+									<h5 class="mb-0">Rohit Sharma</h5>
+								</div>
+							</div>
+						</td>
+						<td><span class="btn btn-success">Criket</span></td>
+						<td><h6 class="mb-0">90/100</h6></td>
+						<td><h6 class="mb-0">Male</h6></td>
+						<td><h6 class="mb-0">28 yrs</h6></td>
+						<td>200</td>
+						<td>100</td>
+						<td>100</td>
+						<td>250</td>
+						<td>120</td>
+					</tr>
+					<tr><td>2</td>
+						<td><div class="user-info">
+								<div class="user-info__img">
+									<img src="img/shubam_gill.jpg" alt="User Img">
+								</div>
+								<div class="user-info__basic">
+									<h5 class="mb-0">Shubman Gill</h5>
+								</div>
+							</div>
+						</td>
+						<td><span class="btn btn-success">Criket</span></td>
+						<td><h6 class="mb-0">90/100</h6></td>
+						<td><h6 class="mb-0">Male</h6></td>
+						<td><h6 class="mb-0">28 yrs</h6></td>
+						<td>200</td>
+						<td>100</td>
+						<td>100</td>
+						<td>250</td>
+						<td>120</td>
+					</tr>
+					<tr><td>3</td>
+						<td><div class="user-info">
+								<div class="user-info__img">
+									<img src="img/Ruturaj_Gaikwad.jpg" alt="User Img">
+								</div>
+								<div class="user-info__basic">
+									<h5 class="mb-0">Ruturaj Gaikwad</h5>
+								</div>
+							</div>
+						</td>
+						<td><span class="btn btn-success">Criket</span></td>
+						<td><h6 class="mb-0">90/100</h6></td>
+						<td><h6 class="mb-0">Male</h6></td>
+						<td><h6 class="mb-0">28 yrs</h6></td>
+						<td>200</td>
+						<td>100</td>
+						<td>100</td>
+						<td>250</td>
+						<td>120</td>
+					</tr>
+					<tr><td>4</td>
+						<td><div class="user-info">
+								<div class="user-info__img">
+									<img src="img/Virat_Kohli.jpg" alt="User Img">
+								</div>
+								<div class="user-info__basic">
+									<h5 class="mb-0">Virat Kohli</h5>
+								</div>
+							</div>
+						</td>
+						<td><span class="btn btn-success">Criket</span></td>
+						<td><h6 class="mb-0">90/100</h6></td>
+						<td><h6 class="mb-0">Male</h6></td>
+						<td><h6 class="mb-0">28 yrs</h6></td>
+						<td>200</td>
+						<td>100</td>
+						<td>100</td>
+						<td>250</td>
+						<td>120</td>
+					</tr>
+					<tr><td>5</td>
+						<td><div class="user-info">
+								<div class="user-info__img">
+									<img src="img/Yashasvi_Jaiswal.jpg" alt="User Img">
+								</div>
+								<div class="user-info__basic">
+									<h5 class="mb-0">Yashasvi Jaiswal</h5>
+								</div>
+							</div>
+						</td>
+						<td><span class="btn btn-success">Criket</span></td>
+						<td><h6 class="mb-0">90/100</h6></td>
+						<td><h6 class="mb-0">Male</h6></td>
+						<td><h6 class="mb-0">28 yrs</h6></td>
+						<td>200</td>
+						<td>100</td>
+						<td>100</td>
+						<td>250</td>
+						<td>120</td>
+					</tr>
+					<tr><td>6</td>
+						<td><div class="user-info">
+								<div class="user-info__img">
+									<img src="img/Ajinkya-Rahane.jpg" alt="User Img">
+								</div>
+								<div class="user-info__basic">
+									<h5 class="mb-0">Ajinkya Rahane</h5>
+								</div>
+							</div>
+						</td>
+						<td><span class="btn btn-success">Criket</span></td>
+						<td><h6 class="mb-0">90/100</h6></td>
+						<td><h6 class="mb-0">Male</h6></td>
+						<td><h6 class="mb-0">28 yrs</h6></td>
+						<td>200</td>
+						<td>100</td>
+						<td>100</td>
+						<td>250</td>
+						<td>120</td>
+					</tr>
+					<tr><td>7</td>
+						<td><div class="user-info">
+								<div class="user-info__img">
+									<img src="img/Ishan_krishan.jpg" alt="User Img">
+								</div>
+								<div class="user-info__basic">
+									<h5 class="mb-0">Ishan Kishan</h5>
+								</div>
+							</div>
+						</td>
+						<td><span class="btn btn-success">Criket</span></td>
+						<td><h6 class="mb-0">90/100</h6></td>
+						<td><h6 class="mb-0">Male</h6></td>
+						<td><h6 class="mb-0">28 yrs</h6></td>
+						<td>200</td>
+						<td>100</td>
+						<td>100</td>
+						<td>250</td>
+						<td>120</td>
+					</tr>
+                    <tr><td>8</td>
+						<td><div class="user-info">
+								<div class="user-info__img">
+									<img src="img/KS-Bharat.jpg" alt="User Img">
+								</div>
+								<div class="user-info__basic">
+									<h5 class="mb-0">KS Bharat</h5>
+								</div>
+							</div>
+						</td>
+						<td><span class="btn btn-success">Criket</span></td>
+						<td><h6 class="mb-0">90/100</h6></td>
+						<td><h6 class="mb-0">Male</h6></td>
+						<td><h6 class="mb-0">28 yrs</h6></td>
+						<td>200</td>
+						<td>100</td>
+						<td>100</td>
+						<td>250</td>
+						<td>120</td>
+					</tr>
+					<tr><td>9</td>
+						<td><div class="user-info">
+								<div class="user-info__img">
+									<img src="img/R-Ashwin.jpg" alt="User Img">
+								</div>
+								<div class="user-info__basic">
+									<h5 class="mb-0">R Ashwin</h5>
+								</div>
+							</div>
+						</td>
+						<td><span class="btn btn-success">Criket</span></td>
+						<td><h6 class="mb-0">90/100</h6></td>
+						<td><h6 class="mb-0">Male</h6></td>
+						<td><h6 class="mb-0">28 yrs</h6></td>
+						<td>200</td>
+						<td>100</td>
+						<td>100</td>
+						<td>250</td>
+						<td>120</td>
+					</tr>
+					<tr><td>10</td>
+						<td><div class="user-info">
+								<div class="user-info__img">
+									<img src="img/Ravindra-Jadeja.jpg" alt="User Img">
+								</div>
+								<div class="user-info__basic">
+									<h5 class="mb-0">Ravindra Jadeja</h5>
+								</div>
+							</div>
+						</td>
+						<td><span class="btn btn-success">Criket</span></td>
+						<td><h6 class="mb-0">90/100</h6></td>
+						<td><h6 class="mb-0">Male</h6></td>
+						<td><h6 class="mb-0">28 yrs</h6></td>
+						<td>200</td>
+						<td>100</td>
+						<td>100</td>
+						<td>250</td>
+						<td>120</td>
+					</tr>
+					<tr><td>11</td>
+						<td><div class="user-info">
+								<div class="user-info__img">
+									<img src="img/Shardul-Thakur.jpg" alt="User Img">
+								</div>
+								<div class="user-info__basic">
+									<h5 class="mb-0">Shardul Thakur</h5>
+								</div>
+							</div>
+						</td>
+						<td><span class="btn btn-success">Criket</span></td>
+						<td><h6 class="mb-0">90/100</h6></td>
+						<td><h6 class="mb-0">Male</h6></td>
+						<td><h6 class="mb-0">28 yrs</h6></td>
+						<td>200</td>
+						<td>100</td>
+						<td>100</td>
+						<td>250</td>
+						<td>120</td>
+					</tr>
+					<tr><td>12</td>
+						<td><div class="user-info">
+								<div class="user-info__img">
+									<img src="img/axar_patel.jpg" alt="User Img">
+								</div>
+								<div class="user-info__basic">
+									<h5 class="mb-0">Axar Patel</h5>
+								</div>
+							</div>
+						</td>
+						<td><span class="btn btn-success">Criket</span></td>
+						<td><h6 class="mb-0">90/100</h6></td>
+						<td><h6 class="mb-0">Male</h6></td>
+						<td><h6 class="mb-0">28 yrs</h6></td>
+						<td>200</td>
+						<td>100</td>
+						<td>100</td>
+						<td>250</td>
+						<td>120</td>
+					</tr>
+					<tr><td>13</td>
+						<td><div class="user-info">
+								<div class="user-info__img">
+									<img src="img/Mohd_Siraj.jpg" alt="User Img">
+								</div>
+								<div class="user-info__basic">
+									<h5 class="mb-0">Mohd. Siraj</h5>
+								</div>
+							</div>
+						</td>
+						<td><span class="btn btn-success">Criket</span></td>
+						<td><h6 class="mb-0">90/100</h6></td>
+						<td><h6 class="mb-0">Male</h6></td>
+						<td><h6 class="mb-0">28 yrs</h6></td>
+						<td>200</td>
+						<td>100</td>
+						<td>100</td>
+						<td>250</td>
+						<td>120</td>
+					</tr>
+					<tr><td>14</td>
+						<td><div class="user-info">
+								<div class="user-info__img">
+									<img src="img/Mukesh_kumar.jpg" alt="User Img">
+								</div>
+								<div class="user-info__basic">
+									<h5 class="mb-0">Mukesh Kumar</h5>
+								</div>
+							</div>
+						</td>
+						<td><span class="btn btn-success">Criket</span></td>
+						<td><h6 class="mb-0">90/100</h6></td>
+						<td><h6 class="mb-0">Male</h6></td>
+						<td><h6 class="mb-0">28 yrs</h6></td>
+						<td>200</td>
+						<td>100</td>
+						<td>100</td>
+						<td>250</td>
+						<td>120</td>
+					</tr>
+					<tr><td>15</td>
+						<td><div class="user-info">
+								<div class="user-info__img">
+									<img src="img/Jaydev_Unadkat.jpg" alt="User Img">
+								</div>
+								<div class="user-info__basic">
+									<h5 class="mb-0">Jaydev Unadkat</h5>
+								</div>
+							</div>
+						</td>
+						<td><span class="btn btn-success">Criket</span></td>
+						<td><h6 class="mb-0">90/100</h6></td>
+						<td><h6 class="mb-0">Male</h6></td>
+						<td><h6 class="mb-0">28 yrs</h6></td>
+						<td>200</td>
+						<td>100</td>
+						<td>100</td>
+						<td>250</td>
+						<td>120</td>
+					</tr>
+					<tr><td>16</td>
+						<td><div class="user-info">
+								<div class="user-info__img">
+									<img src="img/Navdeep_saini.jpg" alt="User Img">
+								</div>
+								<div class="user-info__basic">
+									<h5 class="mb-0">Navdeep Saini</h5>
+								</div>
+							</div>
+						</td>
+						<td><span class="btn btn-success">Criket</span></td>
+						<td><h6 class="mb-0">90/100</h6></td>
+						<td><h6 class="mb-0">Male</h6></td>
+						<td><h6 class="mb-0">28 yrs</h6></td>
+						<td>200</td>
+						<td>100</td>
+						<td>100</td>
+						<td>250</td>
+						<td>120</td>
+					</tr><!-- Player data for cricket -->
+					</tr><table class="table" id="players Table">
+				<thead>
+
+<h1>Womans Cricket team</h1>
+				<tbody>
+
+					<tr class="cricket" data-gender="female" data-health-score="80" data-metabolic-age="180">
+						<tr><td>1</td>
+						<td><div class="user-info">
+								<div class="user-info__img">
+									<img src="img/smriti mandhana.jpeg" alt="User Img">
+								</div>
+								<div class="user-info__basic">
+									<h5 class="mb-0">Smriti Mandhana</h5>
+								</div>
+							</div>
+						</td>
+						<td><span class="btn btn-success">Criket</span></td>
+						<td><h6 class="mb-0">90/100</h6></td>
+						<td><h6 class="mb-0">Male</h6></td>
+						<td><h6 class="mb-0">28 yrs</h6></td>
+						<td>200</td>
+						<td>100</td>
+						<td>100</td>
+						<td>250</td>
+						<td>120</td>
+					</tr>
+					<tr><td>2</td>
+						<td><div class="user-info">
+								<div class="user-info__img">
+									<img src="img/jammiah.jpeg" alt="User Img">
+								</div>
+								<div class="user-info__basic">
+									<h5 class="mb-0">Jemimah Rodrigues</h5>
+								</div>
+							</div>
+						</td>
+						<td><span class="btn btn-success">Criket</span></td>
+						<td><h6 class="mb-0">90/100</h6></td>
+						<td><h6 class="mb-0">Male</h6></td>
+						<td><h6 class="mb-0">28 yrs</h6></td>
+						<td>200</td>
+						<td>100</td>
+						<td>100</td>
+						<td>250</td>
+						<td>120</td>
+					</tr>
+					<tr><td>3</td>
+						<td><div class="user-info">
+								<div class="user-info__img">
+									<img src="img/harleen.jpeg" alt="User Img">
+								</div>
+								<div class="user-info__basic">
+									<h5 class="mb-0"> Harleen Deol</h5>
+								</div>
+							</div>
+						</td>
+						<td><span class="btn btn-success">Criket</span></td>
+						<td><h6 class="mb-0">90/100</h6></td>
+						<td><h6 class="mb-0">Male</h6></td>
+						<td><h6 class="mb-0">28 yrs</h6></td>
+						<td>200</td>
+						<td>100</td>
+						<td>100</td>
+						<td>250</td>
+						<td>120</td>
+					</tr>
+					<tr><td>4</td>
+						<td><div class="user-info">
+								<div class="user-info__img">
+									<img src="img/priya .jpeg" alt="User Img">
+								</div>
+								<div class="user-info__basic">
+									<h5 class="mb-0">Priya Puniya</h5>
+								</div>
+							</div>
+						</td>
+						<td><span class="btn btn-success">Criket</span></td>
+						<td><h6 class="mb-0">90/100</h6></td>
+						<td><h6 class="mb-0">Male</h6></td>
+						<td><h6 class="mb-0">28 yrs</h6></td>
+						<td>200</td>
+						<td>100</td>
+						<td>100</td>
+						<td>250</td>
+						<td>120</td>
+					</tr>
+					<tr><td>5</td>
+						<td><div class="user-info">
+								<div class="user-info__img">
+									<img src="img/shefali.jpeg" alt="User Img">
+								</div>
+								<div class="user-info__basic">
+									<h5 class="mb-0">Shefali Verma</h5>
+								</div>
+							</div>
+						</td>
+						<td><span class="btn btn-success">Criket</span></td>
+						<td><h6 class="mb-0">90/100</h6></td>
+						<td><h6 class="mb-0">Male</h6></td>
+						<td><h6 class="mb-0">28 yrs</h6></td>
+						<td>200</td>
+						<td>100</td>
+						<td>100</td>
+						<td>250</td>
+						<td>120</td>
+					</tr>
+					<tr><td>6</td>
+						<td><div class="user-info">
+								<div class="user-info__img">
+									<img src="img/harmanpreet.png" alt="User Img">
+								</div>
+								<div class="user-info__basic">
+									<h5 class="mb-0">HarmanPreet Kaur</h5>
+								</div>
+							</div>
+						</td>
+						<td><span class="btn btn-success">Criket</span></td>
+						<td><h6 class="mb-0">90/100</h6></td>
+						<td><h6 class="mb-0">Male</h6></td>
+						<td><h6 class="mb-0">28 yrs</h6></td>
+						<td>200</td>
+						<td>100</td>
+						<td>100</td>
+						<td>250</td>
+						<td>120</td>
+					</tr>
+					<tr><td>7</td>
+						<td><div class="user-info">
+								<div class="user-info__img">
+									<img src="img/deepti.jpeg" alt="User Img">
+								</div>
+								<div class="user-info__basic">
+									<h5 class="mb-0">Deepti Sharma</h5>
+								</div>
+							</div>
+						</td>
+						<td><span class="btn btn-success">Criket</span></td>
+						<td><h6 class="mb-0">90/100</h6></td>
+						<td><h6 class="mb-0">Male</h6></td>
+						<td><h6 class="mb-0">28 yrs</h6></td>
+						<td>200</td>
+						<td>100</td>
+						<td>100</td>
+						<td>250</td>
+						<td>120</td>
+					</tr>
+					<tr><td>8</td>
+						<td><div class="user-info">
+								<div class="user-info__img">
+									<img src="img/devika.jpeg" alt="User Img">
+								</div>
+								<div class="user-info__basic">
+									<h5 class="mb-0">Devika Vaidya</h5>
+								</div>
+							</div>
+						</td>
+						<td><span class="btn btn-success">Criket</span></td>
+						<td><h6 class="mb-0">90/100</h6></td>
+						<td><h6 class="mb-0">Male</h6></td>
+						<td><h6 class="mb-0">28 yrs</h6></td>
+						<td>200</td>
+						<td>100</td>
+						<td>100</td>
+						<td>250</td>
+						<td>120</td>
+					</tr>
+					<tr><td>9</td>
+						<td><div class="user-info">
+								<div class="user-info__img">
+									<img src="img/pooja.jpeg" alt="User Img">
+								</div>
+								<div class="user-info__basic">
+									<h5 class="mb-0">Pooja Vastarkar</h5>
+								</div>
+							</div>
+						</td>
+						<td><span class="btn btn-success">Criket</span></td>
+						<td><h6 class="mb-0">90/100</h6></td>
+						<td><h6 class="mb-0">Male</h6></td>
+						<td><h6 class="mb-0">28 yrs</h6></td>
+						<td>200</td>
+						<td>100</td>
+						<td>100</td>
+						<td>250</td>
+						<td>120</td>
+					</tr>
+					<tr><td>10</td>
+						<td><div class="user-info">
+								<div class="user-info__img">
+									<img src="img/sneha.jpeg" alt="User Img">
+								</div>
+								<div class="user-info__basic">
+									<h5 class="mb-0">Sneha Rana</h5>
+								</div>
+							</div>
+						</td>
+						<td><span class="btn btn-success">Criket</span></td>
+						<td><h6 class="mb-0">90/100</h6></td>
+						<td><h6 class="mb-0">Male</h6></td>
+						<td><h6 class="mb-0">28 yrs</h6></td>
+						<td>200</td>
+						<td>100</td>
+						<td>100</td>
+						<td>250</td>
+						<td>120</td>
+					</tr>
+					<tr><td>11</td>
+						<td><div class="user-info">
+								<div class="user-info__img">
+									<img src="img/yastika.jpeg" alt="User Img">
+								</div>
+								<div class="user-info__basic">
+									<h5 class="mb-0">Yastika Bhatiya</h5>
+								</div>
+							</div>
+						</td>
+						<td><span class="btn btn-success">Criket</span></td>
+						<td><h6 class="mb-0">90/100</h6></td>
+						<td><h6 class="mb-0">Male</h6></td>
+						<td><h6 class="mb-0">28 yrs</h6></td>
+						<td>200</td>
+						<td>100</td>
+						<td>100</td>
+						<td>250</td>
+						<td>120</td>
+					</tr>
+					<tr><td>12</td>
+						<td><div class="user-info">
+								<div class="user-info__img">
+									<img src="img/meghana.jpeg" alt="User Img">
+								</div>
+								<div class="user-info__basic">
+									<h5 class="mb-0">Meghana Singh</h5>
+								</div>
+							</div>
+						</td>
+						<td><span class="btn btn-success">Criket</span></td>
+						<td><h6 class="mb-0">90/100</h6></td>
+						<td><h6 class="mb-0">Male</h6></td>
+						<td><h6 class="mb-0">28 yrs</h6></td>
+						<td>200</td>
+						<td>100</td>
+						<td>100</td>
+						<td>250</td>
+						<td>120</td>
+					</tr>
+					<tr><td>13</td>
+						<td><div class="user-info">
+								<div class="user-info__img">
+									<img src="img/amanjot.jpeg" alt="User Img">
+								</div>
+								<div class="user-info__basic">
+									<h5 class="mb-0">Amanjot Kaur</h5>
+								</div>
+							</div>
+						</td>
+						<td><span class="btn btn-success">Criket</span></td>
+						<td><h6 class="mb-0">90/100</h6></td>
+						<td><h6 class="mb-0">Male</h6></td>
+						<td><h6 class="mb-0">28 yrs</h6></td>
+						<td>200</td>
+						<td>100</td>
+						<td>100</td>
+						<td>250</td>
+						<td>120</td>
+					</tr>
+
+					</tr><!-- More player data for cricket -->
+					</tr>
+
+
+
+			<table class="table">
+					<tr class="football" data-gender="male" data-health-score="85" data-metabolic-age="190">
+						<!-- Player data for football -->
+						<section class="main-content">
+
+			<table class="table">
+					<thead>
+					<h1>football team</h1>
+					<tr>
+						<th>S.no</th>
+						<th>Player Name</th>
+						<th>Sports Name</th>
+						<th>Health Score</th>
+						<th>Gender</th>
+						<th>Age</th>
+						<th>Metabolic Age</th>
+						<th>BMI</th>
+						<th>Hydration</th>
+						<th>BoneMass</th>
+						<th>Visceral Fat</th>
+					</tr>
+				</thead>
+						<tr><td>1</td>
+						<td><div class="user-info">
+								<div class="user-info__img">
+									<img src="img2/Sunil Chhetri.jpeg" alt="User Img">
+								</div>
+								<div class="user-info__basic">
+									<h5 class="mb-0">Sunil Chetri</h5>
+								</div>
+							</div>
+						</td>
+						<td><span class="btn btn-success">Criket</span></td>
+						<td><h6 class="mb-0">90/100</h6></td>
+						<td><h6 class="mb-0">Male</h6></td>
+						<td><h6 class="mb-0">28 yrs</h6></td>
+						<td>200</td>
+						<td>100</td>
+						<td>100</td>
+						<td>250</td>
+						<td>120</td>
+					</tr>
+					<tr><td>2</td>
+						<td><div class="user-info">
+								<div class="user-info__img">
+									<img src="img2/Akash Mishra.jpeg" alt="User Img">
+								</div>
+								<div class="user-info__basic">
+									<h5 class="mb-0">Akash Mishra</h5>
+								</div>
+							</div>
+						</td>
+						<td><span class="btn btn-success">Criket</span></td>
+						<td><h6 class="mb-0">90/100</h6></td>
+						<td><h6 class="mb-0">Male</h6></td>
+						<td><h6 class="mb-0">28 yrs</h6></td>
+						<td>200</td>
+						<td>100</td>
+						<td>100</td>
+						<td>250</td>
+						<td>120</td>
+					</tr>
+					<tr><td>3</td>
+						<td><div class="user-info">
+								<div class="user-info__img">
+									<img src="img2/Amrinder singh.jpeg" alt="User Img">
+								</div>
+								<div class="user-info__basic">
+									<h5 class="mb-0">Amrinder singh</h5>
+								</div>
+							</div>
+						</td>
+						<td><span class="btn btn-success">Criket</span></td>
+						<td><h6 class="mb-0">90/100</h6></td>
+						<td><h6 class="mb-0">Male</h6></td>
+						<td><h6 class="mb-0">28 yrs</h6></td>
+						<td>200</td>
+						<td>100</td>
+						<td>100</td>
+						<td>250</td>
+						<td>120</td>
+					</tr>
+					<tr><td>4</td>
+						<td><div class="user-info">
+								<div class="user-info__img">
+									<img src="img2/Anirudh Thapa.jpeg" alt="User Img">
+								</div>
+								<div class="user-info__basic">
+									<h5 class="mb-0">Anirudha Thapa</h5>
+								</div>
+							</div>
+						</td>
+						<td><span class="btn btn-success">Criket</span></td>
+						<td><h6 class="mb-0">90/100</h6></td>
+						<td><h6 class="mb-0">Male</h6></td>
+						<td><h6 class="mb-0">28 yrs</h6></td>
+						<td>200</td>
+						<td>100</td>
+						<td>100</td>
+						<td>250</td>
+						<td>120</td>
+					</tr>
+					<tr><td>5</td>
+						<td><div class="user-info">
+								<div class="user-info__img">
+									<img src="img2/Anwar Ali.jpeg" alt="User Img">
+								</div>
+								<div class="user-info__basic">
+									<h5 class="mb-0">Anwar ali</h5>
+								</div>
+							</div>
+						</td>
+						<td><span class="btn btn-success">Criket</span></td>
+						<td><h6 class="mb-0">90/100</h6></td>
+						<td><h6 class="mb-0">Male</h6></td>
+						<td><h6 class="mb-0">28 yrs</h6></td>
+						<td>200</td>
+						<td>100</td>
+						<td>100</td>
+						<td>250</td>
+						<td>120</td>
+					</tr>
+					<tr><td>6</td>
+						<td><div class="user-info">
+								<div class="user-info__img">
+									<img src="img2/Gurpreet Singh Sandhu.jpeg" alt="User Img">
+								</div>
+								<div class="user-info__basic">
+									<h5 class="mb-0">Gurpreet singh sandhu</h5>
+								</div>
+							</div>
+						</td>
+						<td><span class="btn btn-success">Criket</span></td>
+						<td><h6 class="mb-0">90/100</h6></td>
+						<td><h6 class="mb-0">Male</h6></td>
+						<td><h6 class="mb-0">28 yrs</h6></td>
+						<td>200</td>
+						<td>100</td>
+						<td>100</td>
+						<td>250</td>
+						<td>120</td>
+					</tr>
+					<tr><td>7</td>
+						<td><div class="user-info">
+								<div class="user-info__img">
+									<img src="img2/Jeakson Singh.jpeg" alt="User Img">
+								</div>
+								<div class="user-info__basic">
+									<h5 class="mb-0">jeakson singh</h5>
+								</div>
+							</div>
+						</td>
+						<td><span class="btn btn-success">Criket</span></td>
+						<td><h6 class="mb-0">90/100</h6></td>
+						<td><h6 class="mb-0">Male</h6></td>
+						<td><h6 class="mb-0">28 yrs</h6></td>
+						<td>200</td>
+						<td>100</td>
+						<td>100</td>
+						<td>250</td>
+						<td>120</td>
+					</tr>
+					<tr><td>8</td>
+						<td><div class="user-info">
+								<div class="user-info__img">
+									<img src="img2/Liston Colaco.jpeg" alt="User Img">
+								</div>
+								<div class="user-info__basic">
+									<h5 class="mb-0">Liston Colaco</h5>
+								</div>
+							</div>
+						</td>
+						<td><span class="btn btn-success">Criket</span></td>
+						<td><h6 class="mb-0">90/100</h6></td>
+						<td><h6 class="mb-0">Male</h6></td>
+						<td><h6 class="mb-0">28 yrs</h6></td>
+						<td>200</td>
+						<td>100</td>
+						<td>100</td>
+						<td>250</td>
+						<td>120</td>
+					</tr>
+					<tr><td>9</td>
+						<td><div class="user-info">
+								<div class="user-info__img">
+									<img src="img2/Mehtab Singh.jpeg" alt="User Img">
+								</div>
+								<div class="user-info__basic">
+									<h5 class="mb-0">Mehtab Singh</h5>
+								</div>
+							</div>
+						</td>
+						<td><span class="btn btn-success">Criket</span></td>
+						<td><h6 class="mb-0">90/100</h6></td>
+						<td><h6 class="mb-0">Male</h6></td>
+						<td><h6 class="mb-0">28 yrs</h6></td>
+						<td>200</td>
+						<td>100</td>
+						<td>100</td>
+						<td>250</td>
+						<td>120</td>
+					</tr>
+					<tr><td>10</td>
+						<td><div class="user-info">
+								<div class="user-info__img">
+									<img src="img2/Nikhil Poojary.jpeg" alt="User Img">
+								</div>
+								<div class="user-info__basic">
+									<h5 class="mb-0">Nikhil poojary</h5>
+								</div>
+							</div>
+						</td>
+						<td><span class="btn btn-success">Criket</span></td>
+						<td><h6 class="mb-0">90/100</h6></td>
+						<td><h6 class="mb-0">Male</h6></td>
+						<td><h6 class="mb-0">28 yrs</h6></td>
+						<td>200</td>
+						<td>100</td>
+						<td>100</td>
+						<td>250</td>
+						<td>120</td>
+					</tr>
+					<tr><td>11</td>
+						<td><div class="user-info">
+								<div class="user-info__img">
+									<img src="img2/Pritam Kotal.jpeg" alt="User Img">
+								</div>
+								<div class="user-info__basic">
+									<h5 class="mb-0">Pritam Kotal</h5>
+								</div>
+							</div>
+						</td>
+						<td><span class="btn btn-success">Criket</span></td>
+						<td><h6 class="mb-0">90/100</h6></td>
+						<td><h6 class="mb-0">Male</h6></td>
+						<td><h6 class="mb-0">28 yrs</h6></td>
+						<td>200</td>
+						<td>100</td>
+						<td>100</td>
+						<td>250</td>
+						<td>120</td>
+					</tr>
+					<tr><td>12</td>
+						<td><div class="user-info">
+								<div class="user-info__img">
+									<img src="img2/Rahim Ali.jpeg" alt="User Img">
+								</div>
+								<div class="user-info__basic">
+									<h5 class="mb-0">Rahim Ali</h5>
+								</div>
+							</div>
+						</td>
+						<td><span class="btn btn-success">Criket</span></td>
+						<td><h6 class="mb-0">90/100</h6></td>
+						<td><h6 class="mb-0">Male</h6></td>
+						<td><h6 class="mb-0">28 yrs</h6></td>
+						<td>200</td>
+						<td>100</td>
+						<td>100</td>
+						<td>250</td>
+						<td>120</td>
+					</tr>
+					<tr><td>13</td>
+						<td><div class="user-info">
+								<div class="user-info__img">
+									<img src="img2/Rahul Bheke.jpeg" alt="User Img">
+								</div>
+								<div class="user-info__basic">
+									<h5 class="mb-0">Rahul Bheke</h5>
+								</div>
+							</div>
+						</td>
+						<td><span class="btn btn-success">Criket</span></td>
+						<td><h6 class="mb-0">90/100</h6></td>
+						<td><h6 class="mb-0">Male</h6></td>
+						<td><h6 class="mb-0">28 yrs</h6></td>
+						<td>200</td>
+						<td>100</td>
+						<td>100</td>
+						<td>250</td>
+						<td>120</td>
+					</tr>
+					<tr><td>14</td>
+						<td><div class="user-info">
+								<div class="user-info__img">
+									<img src="img2/Rohit Kumar.jpeg" alt="User Img">
+								</div>
+								<div class="user-info__basic">
+									<h5 class="mb-0">Rohit kumar</h5>
+								</div>
+							</div>
+						</td>
+						<td><span class="btn btn-success">Criket</span></td>
+						<td><h6 class="mb-0">90/100</h6></td>
+						<td><h6 class="mb-0">Male</h6></td>
+						<td><h6 class="mb-0">28 yrs</h6></td>
+						<td>200</td>
+						<td>100</td>
+						<td>100</td>
+						<td>250</td>
+						<td>120</td>
+					</tr>
+					<tr><td>15</td>
+						<td><div class="user-info">
+								<div class="user-info__img">
+									<img src="img2/Sandesh Jhingan.jpeg" alt="User Img">
+								</div>
+								<div class="user-info__basic">
+									<h5 class="mb-0">Sandesh jhingan</h5>
+								</div>
+							</div>
+						</td>
+						<td><span class="btn btn-success">Criket</span></td>
+						<td><h6 class="mb-0">90/100</h6></td>
+						<td><h6 class="mb-0">Male</h6></td>
+						<td><h6 class="mb-0">28 yrs</h6></td>
+						<td>200</td>
+						<td>100</td>
+						<td>100</td>
+						<td>250</td>
+						<td>120</td>
+					</tr>
+					<tr><td>16</td>
+						<td><div class="user-info">
+								<div class="user-info__img">
+									<img src="img2/Subhasish Bose.jpeg" alt="User Img">
+								</div>
+								<div class="user-info__basic">
+									<h5 class="mb-0">Subhasish Bose</h5>
+								</div>
+							</div>
+						</td>
+						<td><span class="btn btn-success">Criket</span></td>
+						<td><h6 class="mb-0">90/100</h6></td>
+						<td><h6 class="mb-0">Male</h6></td>
+						<td><h6 class="mb-0">28 yrs</h6></td>
+						<td>200</td>
+						<td>100</td>
+						<td>100</td>
+						<td>250</td>
+						<td>120</td>
+					</tr>
+					</tr>
+
+				<thead>
+
+					<tr>
+						<th>S.no</th>
+						<th>Player Name</th>
+						<th>Sports Name</th>
+						<th>Health Score</th>
+						<th>Gender</th>
+						<th>Age</th>
+						<th>Metabolic Age</th>
+						<th>BMI</th>
+						<th>Hydration</th>
+						<th>BoneMass</th>
+						<th>Visceral Fat</th>
+					</tr>
+				</thead>
+					<tr class="hockey" data-gender="female" data-health-score="88" data-metabolic-age="195">
+						<tr><td>1</td>
+						<td><div class="user-info">
+								<div class="user-info__img">
+									<img src="img3/akashdeep singh.jpeg" alt="User Img">
+								</div>
+								<div class="user-info__basic">
+									<h5 class="mb-0">Akashdeep singh</h5>
+								</div>
+							</div>
+						</td>
+						<td><span class="btn btn-success">Criket</span></td>
+						<td><h6 class="mb-0">90/100</h6></td>
+						<td><h6 class="mb-0">Male</h6></td>
+						<td><h6 class="mb-0">28 yrs</h6></td>
+						<td>200</td>
+						<td>100</td>
+						<td>100</td>
+						<td>250</td>
+						<td>120</td>
+					</tr>
+					<tr><td>2</td>
+						<td><div class="user-info">
+								<div class="user-info__img">
+									<img src="img3/DIPSAN TIRKEY.jpeg" alt="User Img">
+								</div>
+								<div class="user-info__basic">
+									<h5 class="mb-0">Dispan Tirkey</h5>
+								</div>
+							</div>
+						</td>
+						<td><span class="btn btn-success">Criket</span></td>
+						<td><h6 class="mb-0">90/100</h6></td>
+						<td><h6 class="mb-0">Male</h6></td>
+						<td><h6 class="mb-0">28 yrs</h6></td>
+						<td>200</td>
+						<td>100</td>
+						<td>100</td>
+						<td>250</td>
+						<td>120</td>
+					</tr>
+					<tr><td>3</td>
+						<td><div class="user-info">
+								<div class="user-info__img">
+									<img src="img3/JARMANPREET SINGH.jpeg" alt="User Img">
+								</div>
+								<div class="user-info__basic">
+									<h5 class="mb-0">Jarmanpreet Singh</h5>
+								</div>
+							</div>
+						</td>
+						<td><span class="btn btn-success">Criket</span></td>
+						<td><h6 class="mb-0">90/100</h6></td>
+						<td><h6 class="mb-0">Male</h6></td>
+						<td><h6 class="mb-0">28 yrs</h6></td>
+						<td>200</td>
+						<td>100</td>
+						<td>100</td>
+						<td>250</td>
+						<td>120</td>
+					</tr>
+					<tr><td>4</td>
+						<td><div class="user-info">
+								<div class="user-info__img">
+									<img src="img3/LALIT-KUMAR0-UPADHYAY-png.png" alt="User Img">
+								</div>
+								<div class="user-info__basic">
+									<h5 class="mb-0">Lalit kumaro upadhyay</h5>
+								</div>
+							</div>
+						</td>
+						<td><span class="btn btn-success">Criket</span></td>
+						<td><h6 class="mb-0">90/100</h6></td>
+						<td><h6 class="mb-0">Male</h6></td>
+						<td><h6 class="mb-0">28 yrs</h6></td>
+						<td>200</td>
+						<td>100</td>
+						<td>100</td>
+						<td>250</td>
+						<td>120</td>
+					</tr>
+					<tr><td>5</td>
+						<td><div class="user-info">
+								<div class="user-info__img">
+									<img src="img3/MANDEEP SINGH4.jpeg" alt="User Img">
+								</div>
+								<div class="user-info__basic">
+									<h5 class="mb-0">Mandeep singh</h5>
+								</div>
+							</div>
+						</td>
+						<td><span class="btn btn-success">Criket</span></td>
+						<td><h6 class="mb-0">90/100</h6></td>
+						<td><h6 class="mb-0">Male</h6></td>
+						<td><h6 class="mb-0">28 yrs</h6></td>
+						<td>200</td>
+						<td>100</td>
+						<td>100</td>
+						<td>250</td>
+						<td>120</td>
+					</tr>
+					<tr><td>6</td>
+						<td><div class="user-info">
+								<div class="user-info__img">
+									<img src="img3/MANPREET SINGH.jpeg" alt="User Img">
+								</div>
+								<div class="user-info__basic">
+									<h5 class="mb-0">Manpreet singh</h5>
+								</div>
+							</div>
+						</td>
+						<td><span class="btn btn-success">Criket</span></td>
+						<td><h6 class="mb-0">90/100</h6></td>
+						<td><h6 class="mb-0">Male</h6></td>
+						<td><h6 class="mb-0">28 yrs</h6></td>
+						<td>200</td>
+						<td>100</td>
+						<td>100</td>
+						<td>250</td>
+						<td>120</td>
+					</tr>
+					<tr><td>7</td>
+						<td><div class="user-info">
+								<div class="user-info__img">
+									<img src="img3/NILAKANTA SHARMA.jpeg" alt="User Img">
+								</div>
+								<div class="user-info__basic">
+									<h5 class="mb-0">Nilakanta sharma</h5>
+								</div>
+							</div>
+						</td>
+						<td><span class="btn btn-success">Criket</span></td>
+						<td><h6 class="mb-0">90/100</h6></td>
+						<td><h6 class="mb-0">Male</h6></td>
+						<td><h6 class="mb-0">28 yrs</h6></td>
+						<td>200</td>
+						<td>100</td>
+						<td>100</td>
+						<td>250</td>
+						<td>120</td>
+					</tr>
+                    <tr><td>8</td>
+						<td><div class="user-info">
+								<div class="user-info__img">
+									<img src="img3/SIMRANJEET SINGH.jpeg" alt="User Img">
+								</div>
+								<div class="user-info__basic">
+									<h5 class="mb-0">Simranjeet singh</h5>
+								</div>
+							</div>
+						</td>
+						<td><span class="btn btn-success">Criket</span></td>
+						<td><h6 class="mb-0">90/100</h6></td>
+						<td><h6 class="mb-0">Male</h6></td>
+						<td><h6 class="mb-0">28 yrs</h6></td>
+						<td>200</td>
+						<td>100</td>
+						<td>100</td>
+						<td>250</td>
+						<td>120</td>
+					</tr>
+					<tr><td>9</td>
+						<td><div class="user-info">
+								<div class="user-info__img">
+									<img src="img3/SREEJESH PARATTU RAVEENDRAN.jpeg" alt="User Img">
+								</div>
+								<div class="user-info__basic">
+									<h5 class="mb-0">Sreejesh paratu raveendran</h5>
+								</div>
+							</div>
+						</td>
+						<td><span class="btn btn-success">Criket</span></td>
+						<td><h6 class="mb-0">90/100</h6></td>
+						<td><h6 class="mb-0">Male</h6></td>
+						<td><h6 class="mb-0">28 yrs</h6></td>
+						<td>200</td>
+						<td>100</td>
+						<td>100</td>
+						<td>250</td>
+						<td>120</td>
+					</tr>
+					<tr><td>10</td>
+						<td><div class="user-info">
+								<div class="user-info__img">
+									<img src="img3/sudinder singh.jpeg" alt="User Img">
+								</div>
+								<div class="user-info__basic">
+									<h5 class="mb-0">sudinder singh</h5>
+								</div>
+							</div>
+						</td>
+						<td><span class="btn btn-success">Criket</span></td>
+						<td><h6 class="mb-0">90/100</h6></td>
+						<td><h6 class="mb-0">Male</h6></td>
+						<td><h6 class="mb-0">28 yrs</h6></td>
+						<td>200</td>
+						<td>100</td>
+						<td>100</td>
+						<td>250</td>
+						<td>120</td>
+					</tr>
+					<tr><td>11</td>
+						<td><div class="user-info">
+								<div class="user-info__img">
+									<img src="img3/SUKHJEET SINGH.jpeg" alt="User Img">
+								</div>
+								<div class="user-info__basic">
+									<h5 class="mb-0">Sukhjeet singh</h5>
+								</div>
+							</div>
+						</td>
+						<td><span class="btn btn-success">Criket</span></td>
+						<td><h6 class="mb-0">90/100</h6></td>
+						<td><h6 class="mb-0">Male</h6></td>
+						<td><h6 class="mb-0">28 yrs</h6></td>
+						<td>200</td>
+						<td>100</td>
+						<td>100</td>
+						<td>250</td>
+						<td>120</td>
+					</tr>
+					<tr><td>12</td>
+						<td><div class="user-info">
+								<div class="user-info__img">
+									<img src="img3/Surender-Kumar-HI.jpg" alt="User Img">
+								</div>
+								<div class="user-info__basic">
+									<h5 class="mb-0">Surender Kumar</h5>
+								</div>
+							</div>
+						</td>
+						<td><span class="btn btn-success">Criket</span></td>
+						<td><h6 class="mb-0">90/100</h6></td>
+						<td><h6 class="mb-0">Male</h6></td>
+						<td><h6 class="mb-0">28 yrs</h6></td>
+						<td>200</td>
+						<td>100</td>
+						<td>100</td>
+						<td>250</td>
+						<td>120</td>
+					</tr>
+					<!-- Player data for athletics -->
+					</tr>
+					<tr class="atheletics" data-gender="male" data-health-score="82" data-metabolic-age="185">
+						<!-- Player data for hockey -->
+					</tr>
+					<!-- Add more player data rows as needed -->
+				</tbody>
+			</table>
+		</div>
+	</section>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+	<script>
+		$(document).ready(function() {
+			// Function to show players based on selected sport and gender
+			function showPlayersBySportAndGender(sport, gender) {
+				$('#playersTable body tr').hide();
+				$('.' + sport + '[data-gender="' + gender + '"]').show();
+			}
+
+			// Event handler for the Apply button
+			$('#applyBtn').click(function() {
+				var selectedSport = $('#sportsType').val();
+				var selectedGender = $('#gender').val();
+				showPlayersBySportAndGender(selectedSport, selectedGender);
+			});
+		});
+	</script>
+</body>
+</html>
